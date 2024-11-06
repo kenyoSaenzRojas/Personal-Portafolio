@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 1000px;
+    /* border: solid 2px; */
+    font-size: 14px;
+
+}
+.contenedor{
+
+    border: solid 2px ;
+    width: 90%;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+}
+/* Cabecera */
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    height: 10%;
+}
+.titulo{
+    display: flex;
+
+
+}
+.titulo img{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    margin-right: 20px;
+    padding: 20px 20px;
+}
+
+.lista{
+    display: flex;
+    margin-right:10px ;
+    list-style-type: none;
+}
+.lista li{
+    margin-left: 10px;
+}
+/* Hero */
+.hero{
+    display: flex;
+    height: 15%;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-family: "Indie Flower", cursive;
+    font-size: 40px;
+}
+/* campos */
+.campos{
+    display: flex;
+    border: solid 1px;
+    height: 40%;
+}
+
+/* Proyecto */
+.proyectos{
+    border: solid 1px;
+    width: 35%;
+}
+.experiencia, .educacion{
+    width: 38.5%;
+    /* padding: 20px; */
+    border: solid 1px;
+}
+
+.lista-proyecto li{
+    padding-left: 30px;
+    list-style-type: none;
+}
+span{
+    font-family: "Indie Flower", cursive;
+    font-weight: 700;
+}
+h3{
+    font-family: "Indie Flower", cursive;
+    margin: 10px 10px 15px 30px;
+    font-weight: 900;
+}
+hr{
+    margin: 8px 0;
+}
+/* Work Experiencia */
+.arriba{
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.arriba span, p, a{
+    margin-bottom: 5px;
+}
+.abajo{
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.abajo span, p, a{
+    padding-right: 25px;
+    margin-bottom: 5px;
+}
+/* Education */
+.lista-educa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+.lista-educa p{
+    margin-bottom: 10px;
+}
+.lista-educa span{
+    margin-bottom: 10px;
+}
+.lista-educacion{
+    margin-left: 10px;
+    list-style-type:square;
+    margin-bottom: 20px;
+}
+/* footer */
+.pie{
+    height: 25%;
+}
+.uno, .dos, .tres{
+    width: 25%;
+    border: solid 2px;
+    border-radius: 20px;
+    padding: 15px 10px;
+}
+.comentario{
+
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 10px;
+}
+.copy{
+
+    margin-top: 60px;
+    text-align: center;
+}
+
+@media screen and (width < 460px) {
+    .contenedor{
+        height: 1150px;
+    }
+
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cabecera{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 5%;
+    }
+    .campos{
+        display: flex;
+        flex-direction: column;
+        width:100% ;
+        align-items: center;
+        height: 63%;
+    }
+    .proyectos, .experiencia, .educacion{
+        width: 100%;
+        align-items: center; 
+        align-content: center;
+    }
+    
+    .proyectos h3{
+        text-align: center;
+    }
+    .lista-proyecto{
+        text-align: center;
+    }
+    .lista-proyecto{
+        background-color: silver;
+    }
+    .arriba{
+        background-color: silver;
+    }
+    .abajo{
+        background-color: silver;
+    }
+    .hero{
+       
+        height: 10%;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+    }
+   
+    /* footer */
+    .pie{
+        margin-top: 5%;
+    }
+    .comentario{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .uno{
+        width: 90%;
+        margin: auto ;
+        
+    }
+    .dos, .tres{
+        display: none;
+    }
+    .copy{
+        margin-top: 10px;
+    }
+
+}
+    
+
+
+
+
+
+
+
